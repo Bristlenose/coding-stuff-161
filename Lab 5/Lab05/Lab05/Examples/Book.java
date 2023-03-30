@@ -5,6 +5,8 @@ public class Book{
    private int year;
    private double price;
  
+   public Book (){} // replacement for the default constructor of Book
+   
    /** constructor for a book object*/
    public Book(String titleIn, String authorIn,  int yearIn, double priceIn){
       title = titleIn;
@@ -12,6 +14,11 @@ public class Book{
       year = yearIn;
       price = priceIn; 
    }
+  public Book(String titleIn, String authorIn,  int yearIn){
+      title = titleIn;
+      author = authorIn;
+      year = yearIn;
+  }
   
   /**mutator method for title*/
    public void setTitle(String titleIn){

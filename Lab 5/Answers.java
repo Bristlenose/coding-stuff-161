@@ -2,15 +2,15 @@
 
 Exercise 1
 
-1:create a new guitar 
+1:create a new variable g of type gutair and makes a new instance of gutair 
 
 2:
 
 3:
-the constructors:public class Guitar{ , private int numStrings; , private boolean acoustic; , private String brand;
-the replacement for the default constructor: public Guitar(int nS, boolean ac, String br){
-the mutator: public void setNumStrings(int nS){
-the accessor: getNumStrings(){
+the constructors:
+the replacement for the default constructor: 
+the mutator: 
+the accessor: 
 
 4: Anywhere inside the class As is a private int decleared at start
 
