@@ -1,4 +1,5 @@
 /** Bank acc */
+import java.util.Formatter;
 
 public class BankAccount{
    //set data fields
@@ -26,8 +27,9 @@ public class BankAccount{
    }
       
    public void displayBankAccount(){
+      Formatter formatter = new Formatter();
       System.out.println("Account holder: "+accountName);
-      System.out.println("Balance in NZ dollars: "+balance);
+      System.out.println("Balance in NZ dollars: "+ formatter.format("%.2f", balance));
       System.out.println("");
       
       
