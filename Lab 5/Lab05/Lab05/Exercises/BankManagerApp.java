@@ -4,9 +4,28 @@ public class BankManagerApp{
    public static void main(String[]args){
    
       //create new bank accounts
-      Bank bankA = new Bank(1000,"Monty Moneybags");
-      Bank bankB = new Bank(0,"Peregrine Pawpaw");
-   
+      BankAccount bankA = new BankAccount(123432.03,"Monty Moneybags");
+      BankAccount bankB = new BankAccount(-100.34,"Peregrine Pawpaw");
+      
+      //Bank A inital value
       bankA.displayBankAccount();
+      
+      //changes to bank A value
+      bankA.updateBalance(11111);
+      bankA.updateBalance(-1111);
+      bankA.updateBalance(0.42);
+      
+      //Bank A final value
+      bankA.displayBankAccount();
+      
+      //bank B inital value
+      bankB.displayBankAccount();
+      
+      //changes to bank B value
+      bankB.updateBalance(-100);
+      bankB.updateBalance(201.34);
+      
+      //Bank A final value
+      bankB.displayBankAccount();
    }
 }

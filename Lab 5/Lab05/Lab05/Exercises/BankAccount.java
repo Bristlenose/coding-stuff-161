@@ -1,6 +1,6 @@
 /** Bank acc */
 
-public class Bank{
+public class BankAccount{
    //set data fields
    private double balance;
    private String accountName;
@@ -17,17 +17,18 @@ public class Bank{
    
    /** mutator set balance                           */
    public void updateBalance(double bal){
-      balance = bal;
+      balance = balance + bal;
    }
 
    /** accessor returns balance                        */
-   public boolean getBalance(){
+   public double getBalance(){
       return balance;
    }
       
    public void displayBankAccount(){
-      System.Out.println("Account holder: "+accountName);
-      System.Out.println("Balance in NZ dollars: "+balance);
+      System.out.println("Account holder: "+accountName);
+      System.out.println("Balance in NZ dollars: "+balance);
+      System.out.println("");
       
       
    }
