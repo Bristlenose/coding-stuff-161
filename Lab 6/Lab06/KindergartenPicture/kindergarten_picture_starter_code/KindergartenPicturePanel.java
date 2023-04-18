@@ -65,10 +65,10 @@ public class KindergartenPicturePanel extends JPanel{
    
       // Use the code below after you have made your LetterBox class in the lab exercises
       
-      // LetterBox lb1 = new LetterBox(245, 395, Color.red, "17");
-      // LetterBox lb2 = new LetterBox(440, 395, Color.red, "15");//Note the street "numbers" are Strings
-      // lb1.draw(g);
-      // lb2.draw(g);
+       Letterbox lb1 = new Letterbox(245, 395, Color.red, "17");
+       Letterbox lb2 = new Letterbox(440, 395, Color.red, "15");//Note the street "numbers" are Strings
+       lb1.draw(g);
+       lb2.draw(g);
    }
       
 }
