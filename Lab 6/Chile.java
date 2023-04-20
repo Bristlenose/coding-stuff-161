@@ -10,15 +10,23 @@ public class Chile extends JPanel{
 
    public void paintComponent(Graphics g){
       super.paintComponent(g); 
-      g.setColor(Color.white); 
       
-      g.fillOval(10, 40, 100, 100);
+      //set color for star
+      Color white = Color.white;
       
-      g.setColor(Color.black);
-      g.fillOval(35, 65, 10, 10);//left eye
-      g.fillOval(75, 65, 10, 10);//right eye
+      //set rectangle sizes and colours
+      g.setColor(Color.red);
+      g.fillRect(0, 150, 500, 150);
       
-      g.drawArc(20, 70, 80, 50, 200, 140);
+      g.setColor(Color.blue);
+      g.fillRect(0, 0, (500/3), 150);
+      
+      g.setColor(Color.white);
+      g.fillRect((500/3), 0, (1000/3), 150);
+      
+      //make star(used predone one from earlie
+      Star star1 = new Star(75, 75, 30, white, 5);
+      star1.draw(g);
 
 
    

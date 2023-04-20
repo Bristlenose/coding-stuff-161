@@ -7,7 +7,7 @@ public class Flags{
       frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
       frame.setLayout(new FlowLayout());
       
-      Algeria smiley = new Algeria();
+      Georgia smiley = new Georgia();
       frame.getContentPane().add (smiley);
       
       Chile smiley2 = new Chile();
