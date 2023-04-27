@@ -8,7 +8,7 @@ public class FairgroundCustomer{
       private int age;
       private double height;
       
-   //constructoe   
+   //constructor   
    public FairgroundCustomer(String nm, int ag, double ht, boolean acc, boolean fw){
       name = nm;
       age = ag;
@@ -18,7 +18,9 @@ public class FairgroundCustomer{
    }
    //wall of death conditions
    public boolean getWallOfDeath(){
+      //condition
       if (age > 16 && height > 1.6 && footwear){
+         //result
          return true;
       }
       else{
@@ -56,9 +58,10 @@ public class FairgroundCustomer{
          return false;
       }
    }
-   //wall of death conditions
+   //availble to ride
    public void displayRideOptions(){
       System.out.println(name + " can ride:");
+      //if conditions met for each ride
       if (getWallOfDeath() == true){
          System.out.println("Wall of Death");
       }
