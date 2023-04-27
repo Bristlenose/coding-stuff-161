@@ -30,7 +30,7 @@ public class FairgroundCustomer{
    
    //Fling And Twirl conditions
    public boolean getFlingAndTwirl(){
-      if (age > 18 && 1.6 <= height && height <= 2.0 && footwear){
+      if (age > 18 && 1.6 < height && height < 2.0 && footwear){
          return true;
       }
       else{
@@ -39,7 +39,7 @@ public class FairgroundCustomer{
    }
    //Log Flume conditions
    public boolean getLogFlume(){
-      if (age > 12 && 1.5 <= height && height <= 2.1){
+      if (age > 12 && 1.5 < height && height < 2.1){
          return true;
       }
       else{

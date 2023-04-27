@@ -7,7 +7,7 @@ public class ConditionalPractice{
    public static void main (String[] args){
       
       //ascending order test 1
-      if (inAscendingOrder(1,2,3) == true){
+      if (inAscendingOrder(9,2,3) == true){
          System.out.println("The numbers are in ascending order");
       }
       else{
@@ -22,6 +22,8 @@ public class ConditionalPractice{
          System.out.println("The numbers are not in ascending order");
       }
       
+      
+      
       //largest of the three test 1
       if (largestOfThree(1,2,3) == 0){
          System.out.println("At least 2 numbers are equal");
@@ -29,6 +31,7 @@ public class ConditionalPractice{
       else{
          System.out.println("The largest of the three numbers is " + largestOfThree(1,2,3));
       }
+      
       //largest of the three test 2
       if (largestOfThree(5,6,3) == 0){
          System.out.println("At least 2 numbers are equal");
@@ -36,12 +39,13 @@ public class ConditionalPractice{
       else{
          System.out.println("The largest of the three numbers is " + largestOfThree(5,6,3));
       }
+      
       //largest of the three test 3
-      if (largestOfThree(2,2,1) == 0){
+      if (largestOfThree(9,2,1) == 0){
          System.out.println("At least 2 numbers are equal");
       }
       else{
-         System.out.println("The largest of the three numbers is " + largestOfThree(2,2,1));
+         System.out.println("The largest of the three numbers is " + largestOfThree(9,2,1));
       }    
       
         

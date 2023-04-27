@@ -69,7 +69,10 @@ public class Cat{
    public boolean getNeutered(){
       return neutered;
    }
-
+   
+   public void displayCat(){
+      System.out.println(getName()+" is a "+getAge()+" year old "+getBreed()+"("+getSex()+"). Neutered: "+getNeutered()+".");
+   }
 
 
 }

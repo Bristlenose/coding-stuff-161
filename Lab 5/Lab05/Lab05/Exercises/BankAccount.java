@@ -5,7 +5,7 @@ public class BankAccount{
    //set data fields
    private double balance;
    private String accountName;
-   private String CURRENCY = "NZ dollars";
+   private final String CURRENCY = "NZ dollars";
    
    /**default constructor, set all values when creating to null                          */
    public BankAccount(){}

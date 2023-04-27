@@ -16,9 +16,9 @@ public class CatApp{
    Cat c2 = new Cat("Lady Puddington","Persian",7.5,'f',true);
    
    //print cat 1 info
-   System.out.println(c1.getName()+" is a "+c1.getAge()+" year old "+c1.getBreed()+"("+c1.getSex()+"). Neutered: "+c1.getNeutered()+".");
+   c1.displayCat();
    
    //print cat 2 info
-   System.out.println(c2.getName()+" is a "+c2.getAge()+" year old "+c2.getBreed()+"("+c2.getSex()+"). Neutered: "+c2.getNeutered()+".");
+   c2.displayCat();
    }
 }
