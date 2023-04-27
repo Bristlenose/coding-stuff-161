@@ -26,7 +26,7 @@ public class FairGroundRides{
    System.out.println("What is your age?");
    age = sc.nextInt();
    
-   System.out.println("What is your height?");
+   System.out.println("What is your height?(m)");
    height = sc.nextDouble();
    
    System.out.println("Are you accompanied by an adult?(True/False)");
