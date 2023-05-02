@@ -11,7 +11,7 @@ public class DeviceApp{
       System.out.println(devA.getModel());
       
       //create 2nd device
-      Device devB = new Device("Mark 7",true,3);
+      Device devB = new Device("Mark 7",true,1);
       devB.setPrice(10.49);
       System.out.println(devB.getModel());
       
@@ -28,14 +28,15 @@ public class DeviceApp{
    
    //which has more usb ports
    private static int maxUSB(int a,int b){
+   //if a bigger
    if (a > b){
       return a;
    }
-   
+   //if b bigger
    else if (b > a){
       return b;
    }
-   
+   //if same
    else{
       return a;
    }
