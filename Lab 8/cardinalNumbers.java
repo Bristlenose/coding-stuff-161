@@ -3,16 +3,14 @@
 import java.util.Scanner;
 
 public class cardinalNumbers{
-   private int num;
    
    public static void main(String[]args){
    //scanning input
    Scanner sc = new Scanner(System.in); 
    System.out.println("Enter an integer: ");
-   int num = sc.nextInt();
    
-   //run and print result of method
-   System.out.println(ordanial(num));  
+   //run and print result of method using number inputted
+   System.out.println(ordanial(sc.nextInt()));  
       
    
    } 
