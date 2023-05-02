@@ -15,30 +15,19 @@ public class DeviceApp{
       devB.setPrice(10.49);
       System.out.println(devB.getModel());
       
-      //print device with more usb ports
-      if (maxUSB(devA.getUSB(),devB.getUSB()) == devA.getUSB()){
-         System.out.println(devA.getModel()+" has more USB ports");
-      }
-      
-      else if (maxUSB(devA.getUSB(),devB.getUSB()) == devB.getUSB()){
-         System.out.println(devB.getModel()+" has more USB ports");
-      }
+      System.out.println((maxUSB(devA,devB)).getModel()+" has the most ports");
       
    }
    
-   //which has more usb ports
-   private static int maxUSB(int a,int b){
+   /**which has more usb ports*/
+   private static Device maxUSB(Device da, Device db){
    //if a bigger
-   if (a > b){
-      return a;
+   if (da.getUSB() > db.getUSB()){
+      return da;
    }
    //if b bigger
-   else if (b > a){
-      return b;
-   }
-   //if same
    else{
-      return a;
+      return db;
    }
    }
    

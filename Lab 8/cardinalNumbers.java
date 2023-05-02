@@ -15,9 +15,9 @@ public class cardinalNumbers{
    
    } 
    
-   //return ordinal number
+   /**return ordinal number*/
    public static String ordanial(int number){
-      //ends in 11,12,13 check have to be before 1,2,3 checkn to get right suffix
+      //ends in 11,12,13 check has to be before 1,2,3 check to get right suffix
       //if ends in 11
       if (number%100 == 11){
          return (number+"th");
