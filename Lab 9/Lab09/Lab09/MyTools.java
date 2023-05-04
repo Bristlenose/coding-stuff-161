@@ -1,6 +1,8 @@
 /** Exercise 2*/
 
 import java.util.Scanner;
+import java.util.Random;
+
 
 public class MyTools{
    
@@ -65,7 +67,14 @@ public class MyTools{
       return sc.nextLine();
    }
    
-   
+   //random range
+   public static int randomInRange(int high,int low){
+      Random r = new Random();
+      int result = r.nextInt(high-low+1)+low;
+      System.out.println(result);
+      return result;
+
+   }
    
    
     

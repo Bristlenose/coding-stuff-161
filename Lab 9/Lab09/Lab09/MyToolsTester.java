@@ -4,7 +4,7 @@ public class MyToolsTester{
    //makes new tool
       MyTools tool1 = new MyTools();
       
-      //tools default prompt
+      //tools non static calling
       tool1.readInt();
       tool1.readDouble();
       tool1.readToken();
@@ -12,10 +12,13 @@ public class MyToolsTester{
       
       System.out.println();
       
-      //tools custom prompt 
+      //tools static calling
       int usrInputint = MyTools.readInt("Please enter your Age");
       double usrInputdouble = MyTools.readDouble("Please enter a Double"); 
       String usrInputtoken = MyTools.readLine("Please enter a Token"); 
-      String usrInputstring = MyTools.readLine("Please enter a String");     
+      String usrInputstring = MyTools.readLine("Please enter a String");
+      
+      //random number
+      int random = MyTools.randomInRange(3,0);   
    }
 }
