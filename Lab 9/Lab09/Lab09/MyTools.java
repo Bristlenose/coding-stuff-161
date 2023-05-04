@@ -67,6 +67,9 @@ public class MyTools{
       return sc.nextLine();
    }
    
+   
+   /** exercise 8 lab 9 */
+   
    //random range
    public static int randomInRange(int high,int low){
       Random r = new Random();
