@@ -12,11 +12,10 @@ public class MyToolsTester{
       
       System.out.println();
       
-      //tools custom prompt
-      tool1.readInt("Give an Interger");
-      tool1.readDouble("I require a Double");
-      tool1.readToken("Show me a Token");
-      tool1.readLine("Feed me a Line");
-      
+      //tools custom prompt 
+      int usrInputint = MyTools.readInt("Please enter your Age");
+      double usrInputdouble = MyTools.readDouble("Please enter a Double"); 
+      String usrInputtoken = MyTools.readLine("Please enter a Token"); 
+      String usrInputstring = MyTools.readLine("Please enter a String");     
    }
 }

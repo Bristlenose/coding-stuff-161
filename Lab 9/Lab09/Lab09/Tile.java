@@ -22,18 +22,20 @@ public class Tile extends JPanel{
       colour = c;
    }
    
-   public void setwidth(int w){
+   public static int setWidth(int w){
       width = w;
+      return w;
    }
    
-   public void setheight(int h){
+   public static int setHeight(int h){
       height = h;
+      return h;
    }
    
    /** Takes a reference to a Graphics object and paints a decorative tile*/
    public void paintComponent(Graphics g){
-      int width = 200;
-      int height = 200;
+//       int width = 200;
+//       int height = 200;
       g.setColor(colour);
       g.fillArc(-width/curveFactor, -height/curveFactor, 2*width/curveFactor, 2*height/curveFactor, 270, 90);
       g.fillArc(-width/curveFactor, height - height/curveFactor, 2*width/curveFactor, 2*height/curveFactor, 0, 90);

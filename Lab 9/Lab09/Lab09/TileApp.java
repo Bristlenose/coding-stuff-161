@@ -12,6 +12,9 @@ public class TileApp{
       frame.setLayout(new FlowLayout());
       frame.setSize(1000, 1000);
       
+      int wid = Tile.setWidth(100);
+      int hig = Tile.setHeight(200);
+      
       Color colour1 = new Color(30,144,255);//dodgerblue
       Color colour2 = new Color(100, 149, 237);//cornflowerblue
       Color colour3 = new Color(65,105,225);//royal
