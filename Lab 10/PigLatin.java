@@ -4,7 +4,7 @@ public class PigLatin{
    
    public static void main(String[] args){
       //convert word inputted to piglatin via caled method
-      word = "dog";
+      word = "test";
       System.out.println(pigLatin(word));
       
       word = "cat";
