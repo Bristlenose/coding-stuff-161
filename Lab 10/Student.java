@@ -4,7 +4,7 @@ public class Student{
    private String familyName;
    private String userName = "";
    private String major;
-   private static String institutionEmailAddress;
+   static String institutionEmailAddress;
    
    //constructor
    public Student(String name,String famName, String maj){
@@ -24,6 +24,9 @@ public class Student{
       userName += givenName.valueOf(givenName.charAt(0));
       userName += givenName.valueOf(givenName.charAt(1));
       
+      //convert to lower case
+      userName = userName.toLowerCase();
+      
       //convert to Acsii
       int a = ("A".compareTo(givenName.valueOf(givenName.charAt(0)))  *-1)+65;
       int b = ("A".compareTo(familyName.valueOf(familyName.charAt(0)))  *-1)+65;
@@ -31,18 +34,15 @@ public class Student{
       //get number
       int c = a * b;
       String num = String.valueOf(c);
-      System.out.println(num);
-      System.out.println(num.charAt(1)+""+num.charAt(2)+""+num.charAt(3));
       
-      
-      System.out.println(userName);
-      
+      //append numbers to username
+      userName = userName + num.charAt(num.length()-3)+""+num.charAt(num.length()-2)+""+num.charAt(num.length()-1);
       return userName;
    }
    
-   /** return email adress */
-   public String getEmailAddress(){
-      return userName + institutionEmailAddress;
+   /** set email adress */
+   public String getEmailAddress(){ 
+      return (userName + institutionEmailAddress);
    }
    
    /** set major */
@@ -51,8 +51,10 @@ public class Student{
       return major;
    }
    
-//    /** to string */
-//    public String toString(){
-//    }
+    /** to string */
+    public String toString(){
+      System.out.println(givenName +" "+ familyName+", Email: "+getEmailAddress()+", Username: "+userName+", Majoring in "+major);
+      return "";
+    }
      
 }
