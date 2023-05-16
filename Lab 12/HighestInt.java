@@ -6,25 +6,57 @@ public class HighestInt{
    /** The main method, from which execution begins :)
      * @param args Only applicable if running from the command line.
      */
+     
+     
+     
+     
+     
+     
+     
+     
    public static void main(String[] args){ 
       String fileContents = getFileContents("numbers.txt");
       
-      //find largest int in file currently broken
+      //variables to keep track of which is largest number
       int largest = 0;
       int count = 0;
+      int currentnum = 0;
+      
       while (count < fileContents.length()){
-         System.out.println(fileContents.charAt(count));
-         if (fileContents.charAt(count) > largest){
-            largest = 0;
-            largest = fileContents.charAt(count);
+         //converts from ascii to int
+         currentnum = fileContents.charAt(count) -48;
+         //if current number > largest number so far replace it and the move onto next number
+         if (largest < currentnum){
+            largest = currentnum;
             count += 1;
          }
+         //move onto next number
          else{
             count += 1;
          }
       } 
       System.out.println(largest);
    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   /** Attempts to open a specified file and returns the contents 
     * as a single string 
