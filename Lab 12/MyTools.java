@@ -81,6 +81,8 @@ public class MyTools{
    
    
    /** lab 12 */
+   
+   /** accept only an inputted char */
    public static String readChar(){
       Scanner in = new Scanner(System.in);
       String chara = "";
@@ -90,6 +92,18 @@ public class MyTools{
          chara = in.nextLine();
       }
       return chara;
+   }
+   
+   /** accept only an inputted number between 2 variables */
+   public static int readIntInRange(int low,int high){
+      Scanner in = new Scanner(System.in);
+      int num = low-1;
+      //check if number between limits
+      while (num < low || num > high){
+         System.out.println("Please enter a Number between "+low+" & "+high+":");
+         num = in.nextInt();
+      }
+      return num;
    }
    
    

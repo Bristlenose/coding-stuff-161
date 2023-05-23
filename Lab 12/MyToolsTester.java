@@ -21,6 +21,7 @@ public class MyToolsTester{
 //       //random number
 //       int random = MyTools.randomInRange(3,0);
          
-      tool1.readChar();   
+      tool1.readChar();  
+      tool1.readIntInRange(0,10);
    }
 }
