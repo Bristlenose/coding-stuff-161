@@ -80,7 +80,7 @@ public class MyTools{
    }
    
    
-   /** lab 12 */
+   /** added in lab 12 */
    
    /** accept only an inputted char */
    public static String readChar(){

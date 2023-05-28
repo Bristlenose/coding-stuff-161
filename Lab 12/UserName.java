@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class UserName{
    public static void main(String[] args){
       getUserName();
-      System.out.println(""); 
    }
    
+   /** take input and check if username is vaild*/
    public static String getUserName(){
       Scanner in = new Scanner(System.in);
       boolean user = false;
@@ -24,7 +24,7 @@ public class UserName{
          
             //if 4 char & 4 num
             if (testChar(charCheck) == 4 && testDigit(digitCheck) == 4){
-               System.out.println(charCheck + digitCheck);
+               System.out.println(charCheck.charAt(0) +""+charCheck.charAt(1) + charCheck.charAt(2) + charCheck.charAt(3) + digitCheck);
                user = true;
             }
             //if 5 char & 3 num
@@ -45,7 +45,7 @@ public class UserName{
    
    
    
-   
+   /** check how many characters */
    public static int testChar(String in){
       //if first 4 characters are letters and 5th a number 
       if (Character.isLetter(in.charAt(0)) == true && Character.isLetter(in.charAt(1)) == true && Character.isLetter(in.charAt(2)) == true && Character.isLetter(in.charAt(3)) == true && Character.isLetter(in.charAt(4)) == false){
@@ -61,6 +61,7 @@ public class UserName{
       }
    }
    
+   /** check how many digits */
    public static int testDigit(String in){
       //if last 4 characters are digit 
       if (Character.isDigit(in.charAt(0)) == true && Character.isDigit(in.charAt(1)) == true && Character.isDigit(in.charAt(2)) == true && Character.isDigit(in.charAt(3)) == true){

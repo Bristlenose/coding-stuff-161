@@ -6,6 +6,7 @@ public class VowelsAndConsonants{
       System.out.println(letters("Computer"));   
    }
    
+   /** seperate vowels from consonants */
    public static String letters(String word){
       int count = 0;
       //list of vowels 
@@ -15,7 +16,7 @@ public class VowelsAndConsonants{
       String consonants = "";
       
       while (count < word.length()){
-         //checks if letter is a vowel
+         //checks if letter is a vowel   
          if (vowelList.indexOf(word.charAt(count)) != -1){ 
             vowels += word.charAt(count);
             count += 1;
