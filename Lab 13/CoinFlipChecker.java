@@ -12,6 +12,7 @@ public class CoinFlipChecker{
       int limit = 100000;//this number must be even and positive!
       boolean exactlyHalf;
       
+      //sets limit to user input, inital limit has to not be final in order to be changed
       limit = readPosEvenInt();
       
       do{
@@ -31,6 +32,7 @@ public class CoinFlipChecker{
       otherwise
       */
       
+      /** exercise 1 added */
       public static int readPosEvenInt(){
          int limit;
          Scanner sc = new Scanner(System.in);
